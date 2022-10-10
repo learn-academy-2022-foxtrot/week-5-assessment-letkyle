@@ -73,7 +73,7 @@ class Bike
 #make another method named pedal_faster that takes in a number that will add to the current speed of the bike
 #make another method named brake that will take a given number that will subtract from the previous speed of the bike
 #use if else statement with .negative to return 0 if the speed is ever negative
-#wanted to add string int to add mph at the end
+#wanted to add mph at the end
 
 def pedal_faster(num)
     @current_speed = @current_speed + num
