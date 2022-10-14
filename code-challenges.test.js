@@ -131,5 +131,28 @@ describe("myFavoriteHandInPoker", () => {
 //while it iterates through the array check for nummbers 2 - 10 and if it hits I need it to store it somewhere and I would need one number to show up twice and another to show up 3 or I could use the filter method to pluck the numbers out and see if there is one double pair && a trip pair inside of the array 
 //use if else statements and have it return "true" if it checks out else "false"
 
-//output: Test Suites: 1 failed, 1 total
-//output: Tests:       1 failed, 2 passed, 3 total
+// const hand1 = [5, 5, 5, 3, 3];
+
+// const myFavoriteHandInPoker = (array) =>{
+//    array.forEach(num => {
+//       count[num] = (count[num] || 0) + 1;
+//     })
+// }
+
+//trying to return "true" if 3 values are the same and 2 values are the same 
+//else return false since it is not a full house but cannot figure out the syntax
+
+const myFavoriteHandInPoker = (arr) => {
+   let fullHouse = {}
+   for (let i = 1; i < arr.length; i++) {
+      let value = arr.values(fullHouse);
+      if((value[0] === 3 && value[1] === 2) || (value[0] === 2 && value[1] === 3)){
+        return true;
+      }
+      else
+      return false;
+   }
+   return fullHouse
+   }
+
+  //output: failed
